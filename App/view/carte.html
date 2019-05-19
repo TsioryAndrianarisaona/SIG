@@ -1,0 +1,24 @@
+<div class="form-inline">
+                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Surface Superieure a" ng-model="surfaceMin" value="">
+                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Surface Inferieure a" ng-model="surfaceMax" value="">
+                <select class="browser-default custom-select" ng-model="category">
+                        <option value="">Categorie</option>
+                        <option value="1">Public</option>
+                        <option value="2">Private</option>
+                </select>
+                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Ville" ng-model="ville">        
+                <button class="btn btn-info " ng-click="recherche()" >Recherche</button>
+                <button class="btn btn-info " ng-click="removeAll()" >Clean Map</button>
+                <select class="browser-default custom-select" ng-model="categoryInsert">
+                                <option value="">Categorie</option>
+                                <option value="1">Public</option>
+                                <option value="2">Private</option>
+                </select>    
+                <button class="btn btn-info " ng-click="insertTerrain()" >Inserer Terrain</button>
+        </div>
+<h1 class="text-danger">
+        {{error}}
+</h1>
+<div id="map" style="height:600px;height:600px;">
+
+</div>
